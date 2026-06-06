@@ -1,0 +1,26 @@
+# 環境・秘匿情報
+.env
+
+# 音声ファイル（サイズが大きいためリポジトリに含めない）
+*.mp3
+*.m4a
+*.wav
+*.flac
+
+# 文字起こし結果
+whisper file/
+
+# バイナリ（GitHub 100MB/ファイル制限）
+ffmpeg.exe
+*.exe
+
+# PyInstaller
+_config.py
+build/
+dist/
+*.spec
+
+# Python
+__pycache__/
+*.pyc
+*.pyo

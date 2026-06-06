@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -c \"from faster_whisper import WhisperModel; print\\('OK'\\)\")"
+    ]
+  }
+}

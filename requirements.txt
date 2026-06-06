@@ -1,0 +1,12 @@
+# Runtime
+openai>=2.32.0
+python-dotenv>=1.2.0
+
+# 24MB 超の音声ファイルを処理するには ffmpeg バイナリが別途必要（Python パッケージではない）
+# Windows: https://www.gyan.dev/ffmpeg/builds/ から ffmpeg-release-essentials.zip をダウンロード
+# ffmpeg.exe をこのフォルダ（または配布時は dist/ フォルダ）に置く
+# 24MB 以下のファイルのみ使う場合は ffmpeg 不要
+
+# Build (GUI .exe のビルド時のみ)
+# pip install pyinstaller
+# python build_exe.py
