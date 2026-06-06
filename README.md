@@ -89,8 +89,8 @@ python build_exe.py
 | 項目 | 内容 |
 |------|------|
 | 対応言語 | 日本語固定（`language="ja"`） |
-| ファイルサイズ上限 | 25 MB（OpenAI API 制限、≒ 20 分の音声） |
-| 対応フォーマット | mp3, mp4, m4a, wav, webm, flac など |
+| ファイルサイズ上限 | **実質なし**。24 MB を超えるファイルは ffmpeg で 15 分ごとに自動分割し、順番に処理して結果を結合する（OpenAI API の 25 MB/リクエスト制限はツール側で自動回避）|
+| 対応フォーマット | GUI のファイル選択は mp3, m4a, wav, webm, mp4（「すべてのファイル」を選べば flac 等 ffmpeg 対応形式も可）。CLI は ffmpeg が扱える形式すべて |
 | Python バージョン | 3.14.2 で動作確認（ローカルモデルは非対応） |
 | GUI 動作環境 | Windows のみ（.exe） |
 | API 依存 | インターネット接続と有効な OpenAI API キーが必要 |
